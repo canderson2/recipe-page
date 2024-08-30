@@ -23,7 +23,7 @@ function Recipe({ recipe }) {
 
         {/* prep overview */ }
         <div className="recipe-preparation">
-          <h3 className="text-preset-3 u-push-bottom-16 rose-800">Preparation time</h3>
+          <h2 className="text-preset-3 u-push-bottom-16 rose-800">Preparation time</h2>
           <ul className="recipe-preparation-lines text-preset-4 stone-600">
             {Object.entries(recipe.preparation).map(([key, value]) => {
               return <li key={key} className="u-push-left-8"><b>{key}</b>: {value}</li>;
@@ -33,7 +33,7 @@ function Recipe({ recipe }) {
 
         {/* ingredients */ }
         <div>
-          <h3 className="text-preset-2 brown-800 u-push-bottom-24">Ingredients</h3>
+          <h2 className="text-preset-2 brown-800 u-push-bottom-24">Ingredients</h2>
           <ul className="ingredients-list text-preset-4 stone-600">
             {recipe.ingredients.map((ingredient) => {
               return <li key={ingredient}>{ingredient}</li>;
@@ -45,7 +45,7 @@ function Recipe({ recipe }) {
 
         {/* instructions */ }
         <div>
-          <h3 className="text-preset-2 brown-800">Instructions</h3>
+          <h2 className="text-preset-2 brown-800">Instructions</h2>
           <ol className="instruction-list u-push-top-24 text-preset-4 stone-600">
             {Object.entries(recipe.instructions).map(([key, value], index) => {
               return <li key={key}><b>{key}</b>: {value}</li>;
@@ -57,7 +57,7 @@ function Recipe({ recipe }) {
 
         {/* nutrition */ }
         <div className="recipe-nutrition">
-          <h3 className="text-preset-2 brown-800">Nutrition</h3>
+          <h2 className="text-preset-2 brown-800">Nutrition</h2>
           <p className="text-preset-4 stone-600 u-push-top-24 u-push-bottom-24">{recipe.nutrition.note}</p>
           <table className="macro-table text-preset-4 stone-600">
             <tbody>
