@@ -1,0 +1,312 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Outfit Regular';
+  src: url('../fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit Semi Bold';
+  src: url('../fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit Bold';
+  src: url('../fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Young Serif Regular';
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+/* elements */
+
+hr {
+  border-top: 0.1px solid var(--stone-150);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+
+/* colors */
+
+.brown-800 {
+  color: var(--brown-800);
+}
+
+.stone-600 {
+  color: var(--stone-600);
+}
+
+.rose-800 {
+  color: var(--rose-800);
+}
+
+
+/* fonts */
+
+.text-preset-1 {
+  font-family: 'Young Serif Regular';
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0px;  
+}
+
+@media (max-width:480px) {
+  .text-preset-1 {
+    font-size: 36px;
+  }
+}
+
+.text-preset-2 {
+  font-family: 'Young Serif Regular';
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-family: 'Outfit Semi Bold';
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  font-family: 'Outfit Regular';
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4__bold {
+  font-family: 'Outfit Bold';
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+
+/* utilities */
+
+.u-push-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.u-push-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.u-push-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.u-push-bottom-32 {
+  margin-bottom: 32px;
+}
+
+.u-push-top-8 {
+  margin-top: 8px;
+}
+
+.u-push-top-24 {
+  margin-top: 24px;
+}
+
+.u-push-top-32 {
+  margin-top: 32px;
+}
+
+.u-push-left-8 {
+  margin-left: 8px;
+}
+
+.u-push-left-16 {
+  margin-left: 16px;
+}
+
+
+/* recipe */
+
+.recipe-container {
+  max-width: 736px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 128px;
+  margin-bottom: 128px;
+  background-color: var(--white);
+  border-radius: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+@media (max-width: 480px) {
+  .recipe-container {
+    border-radius: revert;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+  }
+}
+
+
+/* recipe image */
+
+.image-container {
+  margin: 40px 40px 0px 40px;
+}
+
+.recipe-image {
+  border-radius: 16px;
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    margin: 0px;
+  }
+
+  .recipe-image {
+    border-radius: 0px;
+  }
+}
+
+
+/* recipe content */
+
+.recipe-content {
+  margin: 40px;
+}
+
+@media (max-width: 480px) {
+  .recipe-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+.recipe-overview {
+  margin-bottom: 32px;
+}
+
+.recipe-title {
+  font-family: 'Young Serif Regular';
+  margin-bottom: 24px;
+}
+
+
+/* recipe preparation */
+
+.recipe-preparation {
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.recipe-preparation-lines {
+  padding-left: 8px;
+  list-style-position: outside;
+}
+
+.recipe-preparation-lines li::marker {
+  font-family: 'Outfit Regular';
+  color: var(--rose-800)
+}
+
+.recipe-preparation-lines li {
+  padding-left: 24px;
+}
+
+.recipe-preparation-lines li:not(:last-child) {
+  padding-bottom: 8px;
+}
+
+
+/* recipe ingredients */
+
+.recipe-ingredients {
+  margin-bottom: 32px;
+}
+
+.ingredients-list {
+  list-style-position: outside;
+  padding-left: 16px;
+}
+
+.ingredients-list li::marker {
+  font-family: 'Outfit Regular';
+  color: var(--rose-800);
+}
+
+.ingredients-list li {
+  padding-left: 24px;
+}
+
+.ingredients-list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+
+/* recipe instructions */
+
+.instruction-list {
+  list-style-position: outside;
+  padding-left: 24px;
+}
+
+.instruction-list li::marker {
+  color: var(--rose-800);
+  font-weight: 800;
+  font-family: 'Outfit Bold';
+}
+
+.instruction-list li {
+  padding-left: 16px;
+}
+
+.instruction-list li:not(:first-child) {
+  margin-top: 8px;
+}
+
+
+/* recipe macros */
+
+.macro-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+
+.macro-table td {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.macro-table tr:not(:first-child) td {
+  padding-top: 12px;
+}
+
+.macro-table tr:not(:last-child) td {
+  padding-bottom: 12px;
+} 
+
+.macro-label {
+  padding-left: 32px;
+}
+
+.macro-value {
+  padding-left: 8px;
+}
+
+.macro-table tr:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+}
