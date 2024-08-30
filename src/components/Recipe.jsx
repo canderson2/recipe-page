@@ -8,7 +8,7 @@ function Recipe({ recipe }) {
 
       {/* image */ }
       <div className="image-container">
-        <img className="recipe-image" src={omelette} />
+        <img className="recipe-image" src={omelette} alt={"Omelette on plate"}/>
       </div>
       
       <div className="recipe-content">
