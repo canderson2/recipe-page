@@ -1,10 +1,10 @@
 import React from 'react';
 import './Recipe.css';
-import omelette from './image-omelette.jpeg'
+import omelette from '../images/image-omelette.jpeg';
 
 function Recipe({ recipe }) {
   return (
-    <section className="recipe-container">
+    <section role="main" className="recipe-container">
 
       {/* image */ }
       <div className="image-container">

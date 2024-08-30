@@ -50,7 +50,7 @@ hr {
   font-family: 'Young Serif Regular';
   font-size: 40px;
   line-height: 100%;
-  letter-spacing: 0px;  
+  letter-spacing: 0px;
 }
 
 @media (max-width:480px) {
@@ -131,8 +131,6 @@ hr {
 
 .recipe-container {
   max-width: 736px;
-  /* margin-left: auto;
-  margin-right: auto; */
   display: flex;
   flex-direction: column;
   margin-top: 128px;
@@ -211,7 +209,6 @@ hr {
 }
 
 .recipe-preparation-lines {
-  /* padding-left: 8px; */
   list-style-position: outside;
 
   padding-left: 0px;
@@ -224,7 +221,6 @@ hr {
 }
 
 .recipe-preparation-lines li {
-  /* padding-left: 24px; */
   padding-left: 16px;
 }
 
@@ -241,7 +237,6 @@ hr {
 
 .ingredients-list {
   list-style-position: outside;
-  /* padding-left: 16px; */
   padding: 0px;
   margin: 24px;
 }
@@ -252,7 +247,6 @@ hr {
 }
 
 .ingredients-list li {
-  /* padding-left: 24px; */
   padding-left: 16px;
 }
 
